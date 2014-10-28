@@ -5,6 +5,11 @@ class Codigo extends CI_Controller {
 		parent::__construct();
 	}
 	function index(){
+		$this->load->view('codigo/headers');
+		$this->load->view('codigo/bienvenido');
+	}
+	function holamundo(){
+		$this->load->view('codigo/headers');
 		$this->load->view('codigo/bienvenido');
 	}
 }

@@ -3,6 +3,7 @@
 class Codigo extends CI_Controller {
 	function __construct(){
 		parent::__construct();
+		$this->load->helper('mihelper');
 	}
 	function index(){
 		$this->load->view('codigo/headers');
